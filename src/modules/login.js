@@ -23,10 +23,10 @@ function logOut() {
 
 // Thunk
 export const __login =
-  (paylaod) =>
+  (payload) =>
   async (dispatch, getState, { history }) => {
     // payload === { id: "######", password: "@@@@@@@" };
-    console.log(paylaod);
+    console.log(payload);
     // 네트워크 요청
     const {
       data: { token },
